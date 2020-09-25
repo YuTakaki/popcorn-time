@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/popcorn-time/static/css/main.ad993d4d.chunk.css",
+    "main.js": "/popcorn-time/static/js/main.2d3fdb61.chunk.js",
+    "main.js.map": "/popcorn-time/static/js/main.2d3fdb61.chunk.js.map",
+    "runtime-main.js": "/popcorn-time/static/js/runtime-main.62709e4a.js",
+    "runtime-main.js.map": "/popcorn-time/static/js/runtime-main.62709e4a.js.map",
+    "static/js/2.11e5c1bb.chunk.js": "/popcorn-time/static/js/2.11e5c1bb.chunk.js",
+    "static/js/2.11e5c1bb.chunk.js.map": "/popcorn-time/static/js/2.11e5c1bb.chunk.js.map",
+    "static/css/3.6172b2e3.chunk.css": "/popcorn-time/static/css/3.6172b2e3.chunk.css",
+    "static/js/3.2e84c072.chunk.js": "/popcorn-time/static/js/3.2e84c072.chunk.js",
+    "static/js/3.2e84c072.chunk.js.map": "/popcorn-time/static/js/3.2e84c072.chunk.js.map",
+    "index.html": "/popcorn-time/index.html",
+    "precache-manifest.add41cf17e4ba332ea48a0132e5ace4f.js": "/popcorn-time/precache-manifest.add41cf17e4ba332ea48a0132e5ace4f.js",
+    "service-worker.js": "/popcorn-time/service-worker.js",
+    "static/css/3.6172b2e3.chunk.css.map": "/popcorn-time/static/css/3.6172b2e3.chunk.css.map",
+    "static/css/main.ad993d4d.chunk.css.map": "/popcorn-time/static/css/main.ad993d4d.chunk.css.map",
+    "static/js/2.11e5c1bb.chunk.js.LICENSE.txt": "/popcorn-time/static/js/2.11e5c1bb.chunk.js.LICENSE.txt",
+    "static/media/heart.png": "/popcorn-time/static/media/heart.f0e79c23.png",
+    "static/media/logo.png": "/popcorn-time/static/media/logo.5bd58f1a.png",
+    "static/media/noImage.png": "/popcorn-time/static/media/noImage.b1edc35f.png",
+    "static/media/star.png": "/popcorn-time/static/media/star.5fe49163.png",
+    "static/media/star2.png": "/popcorn-time/static/media/star2.9b0f52ad.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.62709e4a.js",
+    "static/js/2.11e5c1bb.chunk.js",
+    "static/css/main.ad993d4d.chunk.css",
+    "static/js/main.2d3fdb61.chunk.js"
+  ]
+}
