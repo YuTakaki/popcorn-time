@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a9b130f7fc133d17ff9b385455cb7164",
+    "revision": "e97213c6b41012c85168688ed14344a1",
     "url": "/popcorn-time/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/popcorn-time/static/css/3.a35c7e89.chunk.css"
   },
   {
-    "revision": "14ea5281997a12d00f34",
+    "revision": "db2247b2773fe5aa4b97",
     "url": "/popcorn-time/static/css/main.e6da288e.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/popcorn-time/static/js/3.cc84263f.chunk.js"
   },
   {
-    "revision": "14ea5281997a12d00f34",
-    "url": "/popcorn-time/static/js/main.5d1479e9.chunk.js"
+    "revision": "db2247b2773fe5aa4b97",
+    "url": "/popcorn-time/static/js/main.cae16db7.chunk.js"
   },
   {
     "revision": "54a7db22ac4317c7667f",

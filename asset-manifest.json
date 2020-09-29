@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/popcorn-time/static/css/main.e6da288e.chunk.css",
-    "main.js": "/popcorn-time/static/js/main.5d1479e9.chunk.js",
-    "main.js.map": "/popcorn-time/static/js/main.5d1479e9.chunk.js.map",
+    "main.js": "/popcorn-time/static/js/main.cae16db7.chunk.js",
+    "main.js.map": "/popcorn-time/static/js/main.cae16db7.chunk.js.map",
     "runtime-main.js": "/popcorn-time/static/js/runtime-main.5f21aa6c.js",
     "runtime-main.js.map": "/popcorn-time/static/js/runtime-main.5f21aa6c.js.map",
     "static/js/2.4817a6a2.chunk.js": "/popcorn-time/static/js/2.4817a6a2.chunk.js",
@@ -11,7 +11,7 @@
     "static/js/3.cc84263f.chunk.js": "/popcorn-time/static/js/3.cc84263f.chunk.js",
     "static/js/3.cc84263f.chunk.js.map": "/popcorn-time/static/js/3.cc84263f.chunk.js.map",
     "index.html": "/popcorn-time/index.html",
-    "precache-manifest.6aa02db60c8e518146dc233b934359f1.js": "/popcorn-time/precache-manifest.6aa02db60c8e518146dc233b934359f1.js",
+    "precache-manifest.6deb92ab16a4556fe061e2023f06cf71.js": "/popcorn-time/precache-manifest.6deb92ab16a4556fe061e2023f06cf71.js",
     "service-worker.js": "/popcorn-time/service-worker.js",
     "static/css/3.a35c7e89.chunk.css.map": "/popcorn-time/static/css/3.a35c7e89.chunk.css.map",
     "static/css/main.e6da288e.chunk.css.map": "/popcorn-time/static/css/main.e6da288e.chunk.css.map",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.5f21aa6c.js",
     "static/js/2.4817a6a2.chunk.js",
     "static/css/main.e6da288e.chunk.css",
-    "static/js/main.5d1479e9.chunk.js"
+    "static/js/main.cae16db7.chunk.js"
   ]
 }
