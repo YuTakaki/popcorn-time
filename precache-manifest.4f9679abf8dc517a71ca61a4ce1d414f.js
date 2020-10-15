@@ -1,14 +1,14 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "47c7dafa940a8529fef99e0bad578cf5",
+    "revision": "2f83dd31358363d32f77096c7b881b55",
     "url": "/popcorn-time/index.html"
   },
   {
-    "revision": "dcbe1ed2d8cd82ba6e9e",
+    "revision": "0d7305586fdc1b987c7d",
     "url": "/popcorn-time/static/css/3.a35c7e89.chunk.css"
   },
   {
-    "revision": "cf555915971e1e8eb153",
+    "revision": "ec8e19b00e360317e870",
     "url": "/popcorn-time/static/css/main.e6da288e.chunk.css"
   },
   {
@@ -20,16 +20,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/popcorn-time/static/js/2.4817a6a2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dcbe1ed2d8cd82ba6e9e",
-    "url": "/popcorn-time/static/js/3.281015fa.chunk.js"
+    "revision": "0d7305586fdc1b987c7d",
+    "url": "/popcorn-time/static/js/3.93449346.chunk.js"
   },
   {
-    "revision": "cf555915971e1e8eb153",
-    "url": "/popcorn-time/static/js/main.1133f94f.chunk.js"
+    "revision": "ec8e19b00e360317e870",
+    "url": "/popcorn-time/static/js/main.2fe8c640.chunk.js"
   },
   {
-    "revision": "8f502eb325bf285e36a9",
-    "url": "/popcorn-time/static/js/runtime-main.71f3b2bc.js"
+    "revision": "00e00468f442c8f035dd",
+    "url": "/popcorn-time/static/js/runtime-main.5a04de1d.js"
   },
   {
     "revision": "f0e79c237eba7629393f31a151ac7ca0",
