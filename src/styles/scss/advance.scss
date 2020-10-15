@@ -1,0 +1,208 @@
+@import 'variables';
+.advanceSearch{
+    margin: auto;
+    width: 90%;
+    color: white;
+    .filterForm{
+        // display: flex;
+        // justify-content: flex-end;
+        transition: 0.5s;
+        color: white;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.8);
+        right: -1500px;
+        width : 100%;
+        height: 90vh;
+        z-index: 10;
+        h1{
+            text-align: center;
+            font-family: $primaryFont, sans-serif;
+        }
+
+        
+        
+        form{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin: 0 auto;
+            width: 70%;
+            div{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-left: 40px;
+            }
+            input[type=submit]{
+                width: 100%;
+                margin-left: 40px;
+                text-align: center;
+                background-color: $tertiary;
+                color: black;
+                transition: 0.5s;
+                
+                &:hover{
+                    background-color: yellow;
+                    transform: scale(1.1);
+                }
+            }
+        }
+        label{
+            font-family: $secondaryFont, sans-serif;
+        }
+        select, input{
+            background-color: $secondary;
+            border: none;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            font-family: $secondaryFont, sans-serif;
+            
+            
+        }
+    }
+    .activeFilterForm{
+        right : 0
+    }
+    i{
+        
+        color: white;
+        font-size: 30px;
+        width: max-content;
+        
+        
+    }
+    .filter-icon{
+        position: fixed;
+        top: 100px;
+        right: 10px;
+        z-index: 10;
+    }
+    .advance-content-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .advance-content{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .poster{
+        // width: 100%;
+        width: 30vw;
+        min-width: 100px;
+        max-width: 150px;
+        margin: 20px;
+    }
+    .poster_container{
+        width: 100%;
+        color: white;
+        position: relative;
+        img{
+            width: 100%;
+            border-radius: 13px;
+            border: 4px solid white;
+
+        }
+        .posterHover{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(242,207,25, 0.5);
+            border: 5px solid $tertiary;
+            border-radius: 13px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            opacity: 0;
+            transition: 0.5s;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        h1{
+            font-size: 1em; 
+            margin-top: 20px;
+            padding: 10px;
+            background-color: yellow;
+            opacity: 1;
+            border-radius: 13px;
+            
+        }
+        a{
+            color: black
+        }
+        .poster_title{
+            font-family: $secondaryFont sans-serif;
+        }
+    }
+    .loadMore{
+        width: 70%;
+        background-color: $tertiary;
+        height: 50px;
+        font-size: 1em;
+        border: none;
+        color: black;
+        font-family: $secondaryFont, sans-serif;
+        padding-top: auto;
+        transition: 0.5s;
+        &:hover{
+            background-color: yellow;
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .advanceSearch{
+        display: flex;
+        justify-content: space-around !important;
+        width: 90%;
+        .filterForm{
+            // left: 0;
+            position: static;
+            width: 30%;
+            div, input[type=submit]{
+                margin-left: 0px;
+                width: 100% !important;
+            }
+            form{
+                justify-content: flex-start;
+                width: 100%;  
+            }
+            select, input{
+                background-color: $secondary;
+                border: none;
+                outline: none;
+                border-radius: 13px;
+                color: white;
+                padding: 10px;
+                margin: 10px 0;
+                font-family: $secondaryFont, sans-serif;
+                // width: 80%;
+                
+            }
+        }
+        i.fa-filter{
+            display: none;
+        }
+
+        .advance-content-container{
+            width: 60%;
+            h1{
+                font-family: $primaryFont, sans-serif;
+            }
+        }
+        
+        
+    }
+}

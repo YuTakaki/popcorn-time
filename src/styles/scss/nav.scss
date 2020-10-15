@@ -1,0 +1,287 @@
+@import 'variables';
+header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 300;
+}
+.nav-container{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1350px;
+    background-color: $primary;
+    padding: 10px;
+    justify-content: space-between;
+    
+    h1{
+        display: block;
+        font-family: $primaryFont, sans-serif;
+        color: $tertiary;
+        font-size: 1.3em;
+        margin: 5px 5px;
+    }
+    img{
+        margin: 5px 0;
+        height: 30px;
+
+    }
+    .search-container{
+        display: flex;
+        justify-content: space-evenly;
+        border: 1px solid $fontColor;
+        transition: 1s;
+        border-radius: 20px;
+        max-width: 40%;
+        position: relative;
+    }
+    
+    .logo-search-container{
+        margin: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .logo-container{
+        display: flex;
+    }
+    input{
+        display: none;
+        background-color: $primary;
+        border: none;
+        outline: 0;
+        width: 100%;
+        border-radius: 20px;
+        color: $fontColor;
+        background-color: transparent;
+        transition: 1s;
+    }
+    input:focus{
+        background-color: transparent;
+    }
+    i{
+        color: $fontColor;
+        padding: 10px;
+    }
+    .searchClicked{
+        display: block !important;
+    }
+    .searchList{
+        position: absolute;
+        background-color: black;
+        top: 35px;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+    .searched_content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        // height: 100px;
+        margin-top: 10px;
+        padding: 10px;
+        &:hover > h1{
+            color: $tertiary;
+        }
+        img{
+            width: 90%;
+            height: 100%;
+        }
+        h1{
+            font-family: $secondaryFont;
+            font-size: 1em;
+            color: white;
+        }
+    }
+    .nav-option-container{
+        position: absolute;
+        width: 1000px;
+        background-color: rgba(0, 0, 0, 0.6);
+        top: 60px;
+        left: -1000px;
+        height: 100vh;
+        transition: 0.5s;
+        display: flex;
+    }
+    .nav-option-container-active{
+        left: 0
+    }
+    .nav-option-space{
+        width: 70%;
+        height: 100%;
+
+    }
+    .options{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        background-color: $primary;
+        height: 100%;
+        padding-top: 30px;
+    }
+    li{
+        color: $fontColor;
+        cursor: pointer;
+    }
+    li:hover{
+        color: white;
+    }
+    button{
+        background-color: transparent;
+        color: $fontColor;
+        border: none;
+        outline: 0;
+        font-size: 1.3em;
+        margin-right: 30px;
+    }
+    .options div{
+        width: 100%;
+        padding: 20px 30px;
+        height: 60px;
+    }
+    .optionList{
+        position: relative;
+        list-style-type: none;
+        transition: 1s;
+        height: 0px;
+        overflow-y: hidden;
+        width: 100%;
+        
+        li{
+            padding: 10px 50px;
+        }
+    }
+    .dropdown{
+        height: max-content;
+    }
+}
+@media only screen and (max-width : 470px){
+    .nav-container{
+        .logo-container img{
+            display: none;
+        }
+        h1{
+            font-size: 1.3em;
+        }
+    }
+}
+@media only screen and (min-width : 470px){
+    .nav-container{
+        .searched_content{
+            flex-direction: row;
+            height: 100px;
+            img{
+                width: 30%;
+            }
+        }
+    }
+
+}
+@media only screen and (min-width : 600px){
+    .nav-container{
+        i{
+            color: $fontColor;
+            padding: 5px;
+            margin: 0;
+        }
+        .logo-search-container{
+            justify-content: space-between;
+        }
+        .search-container{
+            margin: 10px 50px;
+            border: 1px solid $fontColor;
+            width: 40%;
+            border-radius: 20px;
+        }
+        input{
+            display: block !important;
+            background-color: $primary;
+            border: none;
+            outline: 0;
+            width: 100%;
+            border-radius: 20px;
+            color: $fontColor;
+            background-color: transparent;
+        }
+    }
+}
+@media only screen and (min-width : 950px){
+    .nav-container{
+        button{
+            display: none;
+        }
+        img{
+            height: 40px;
+        }
+        .logo-search-container{
+            justify-content: flex-start;
+        }
+        input{
+            display: block;
+            background-color: $primary;
+            border: none;
+            outline: 0;
+            width: 100%;
+            border-radius: 20px;
+            color: $fontColor;
+            background-color: transparent;
+            
+        }
+        .nav-option-container{
+            position: static;
+            width: max-content;
+            background-color: rgba(0, 0, 0, 0.6);
+            height: max-content;
+            margin-right: 100px;
+            display: block;
+        }
+
+        .options{
+            flex-direction: row;
+            width: max-content;
+            height: max-content;
+            text-align: center;
+            padding: 0;
+        }
+        li{
+            color: $fontColor;
+            cursor: pointer;
+            padding: 10px 20px;
+            margin: 0;
+        } 
+        .options div{
+            width: 100%;
+            padding: 0 20px;
+            height: 100%;
+        }
+        .options div:hover ~ .optionList, .optionList:hover{
+            display: block !important;
+        }
+        .optionList{
+            display: none;
+            position: absolute;
+            list-style-type: none;
+            transition: 1s;
+            height: max-content;
+            overflow-y: hidden;
+            width: max-content;
+            text-align: start;
+            background-color: white;
+            margin-left: -20px;
+            border-radius: 13px;
+            padding: 10px 0;
+            li{
+                color: $primary;
+                padding: 10px 50px;
+            }
+            li:hover{
+                color: $tertiary;
+            }
+        }
+    }
+
+}

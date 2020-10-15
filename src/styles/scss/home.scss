@@ -1,0 +1,15 @@
+.home_main{
+    margin: auto;
+    width: 90%;
+    z-index: 10;
+    flex: 1 0 auto;
+    section{
+        margin-bottom: 65vw;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    section{
+        margin-bottom: 200px !important;
+    }
+}

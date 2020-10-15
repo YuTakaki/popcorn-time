@@ -1,0 +1,114 @@
+.browse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.browse h1 {
+  margin-top: 30px;
+  font-family: "Anton", sans-serif;
+}
+.browse .pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.browse .paginationMobile {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.browse .paginationMobile .page_btn, .browse .paginationMobile .other_pages {
+  margin: 0 2px;
+  padding: 2px;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.browse .paginationPC {
+  display: none;
+  width: 90%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.browse .paginationPC .page_btn, .browse .paginationPC .other_pages {
+  margin: 5px;
+  padding: 10px;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.browse .other_pages {
+  cursor: default;
+}
+.browse .page_btn:hover, .browse .active {
+  background-color: #F2CF19;
+  color: black;
+}
+.browse .page_content {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.browse .poster {
+  width: 30vw;
+  min-width: 100px;
+  max-width: 150px;
+  margin: 20px;
+}
+.browse .poster_container {
+  width: 100%;
+  color: white;
+  position: relative;
+}
+.browse .poster_container img {
+  width: 100%;
+  border-radius: 13px;
+  border: 4px solid white;
+}
+.browse .poster_container .posterHover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(242, 207, 25, 0.5);
+  border: 5px solid #F2CF19;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.browse .poster_container .posterHover:hover {
+  opacity: 1;
+}
+.browse .poster_container h1 {
+  font-size: 1em;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: yellow;
+  opacity: 1;
+  border-radius: 13px;
+}
+.browse .poster_container a {
+  color: black;
+}
+.browse .poster_container .poster_title {
+  font-family: "Work Sans" sans-serif;
+}
+
+@media only screen and (min-width: 600px) {
+  .browse .paginationPC {
+    display: flex;
+  }
+  .browse .paginationMobile {
+    display: none;
+  }
+}

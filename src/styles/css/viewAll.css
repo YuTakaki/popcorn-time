@@ -1,0 +1,71 @@
+.viewAll {
+  color: white;
+}
+.viewAll .content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.viewAll .content h1 {
+  color: black;
+  font-family: "Work Sans", sans-serif;
+}
+.viewAll h1 {
+  color: white;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+}
+.viewAll h4 {
+  font-family: "Work Sans", sans-serif;
+}
+.viewAll .poster {
+  width: 30vw;
+  min-width: 100px;
+  max-width: 150px;
+  margin: 20px;
+}
+.viewAll .poster_container {
+  width: 100%;
+  color: white;
+  position: relative;
+}
+.viewAll .poster_container img {
+  width: 100%;
+  border-radius: 13px;
+  border: 4px solid white;
+}
+.viewAll .poster_container .posterHover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(242, 207, 25, 0.5);
+  border: 5px solid #F2CF19;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.viewAll .poster_container .posterHover:hover {
+  opacity: 1;
+}
+.viewAll .poster_container h1 {
+  font-size: 1em;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: yellow;
+  opacity: 1;
+  border-radius: 13px;
+}
+.viewAll .poster_container a {
+  color: black;
+}
+.viewAll .poster_container .poster_title {
+  font-family: "Work Sans" sans-serif;
+}

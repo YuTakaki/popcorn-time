@@ -1,0 +1,157 @@
+@import 'variables';
+
+.details_page{
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .showDescription{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .title{
+        margin: 20px;
+        text-align: center;
+    }
+    .title h1{
+        font-family: $primaryFont, sans-serif;
+        font-size: 2em; 
+    }
+    .poster{
+        width: 80%;
+        max-width: 260px;
+    }
+    .poster img{
+        width: 100%;
+        border-radius: 13px;
+        border: 5px solid white;
+    }
+    .poster a {
+        height: 100%;
+        width: 100%;
+        // position: absolute;
+        
+    }
+    .poster div{
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: red;
+        padding: 10px;
+        border-radius: 13px;
+        // position: relative;
+        
+    }
+    .rating{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .rating h3{
+        font-size: 1rem;
+    }
+    .popularity, .vote-average{
+        display: flex;
+        justify-content: space-between;
+    }
+    .genres{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+    }
+    .genres h3{
+        font-family: $secondaryFont, sans-serif;
+        margin: 0 10px;
+    }
+    .overview{
+        width: 80%;
+        margin: 20px 0 ;
+    }
+    .overview p {
+        // text-align: justify;
+        font-family: $secondaryFont, sans-serif;
+    }
+    .trailer{
+        width: 100%;
+        max-width: 360px;
+        
+    }
+    .trailer iframe{
+        width: 100%;
+        height: 40vw;
+    }
+    .reviews{
+        width: 100%;
+    }
+    .review-container{
+        height: 100px;
+        overflow: hidden;
+        mask-image: linear-gradient(to bottom, black 10%, transparent 100%);
+        margin-top: 20px;
+    }
+    .trailer_reviews_container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (min-width : 660px){
+    .details_page{
+        .showDescription{
+            flex-direction: row;
+            width: 80%;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        .details_content{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 20px;
+        }
+        .genres{
+            justify-content: flex-start;
+        }
+        .rating{
+            width: 210px;
+        }
+        .title{
+            text-align: start;
+        }
+    }
+    
+}
+
+@media only screen and (min-width : 800px){
+    .details_page{
+        .trailer_reviews_container{
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        .trailer{
+            max-width: 50%;
+            height: 360px;
+
+        }
+        .trailer iframe{
+            width: 100%;
+            height: 100%;
+        }
+        .reviews{
+            width: 35%;
+
+        }
+        
+    }
+}
